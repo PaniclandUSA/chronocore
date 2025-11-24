@@ -1,0 +1,311 @@
+{
+  "title": "Grindhouse Genesis: The 200-Murder Scenario",
+  "description": "Stress-test scenario: 200 simultaneous assassinations eliminating all power structures. Tests quantum superposition, adaptive resolution, and maximum narrative density.",
+  "runtime_seconds": 8288,
+  "genre": "grindhouse_tragedy",
+  "constants": {
+    "G": 1.2,
+    "c_story": 0.3,
+    "lambda_decay": 0.1
+  },
+  "chronotons": [
+    {
+      "id": 47,
+      "t": 0.007,
+      "M": 0.85,
+      "psi_M": [0.7, 0.3],
+      "tags": ["betrayal", "mercy", "familial_bond"],
+      "description": "Agricultural baron Vasquez killed by daughter's hired assassin",
+      "observer": "daughter_elena",
+      "schwarzschild_radius": 1.70,
+      "dilation_potential": 90.0
+    },
+    {
+      "id": 156,
+      "t": 0.052,
+      "M": 0.78,
+      "psi_M": [0.3, 0.7],
+      "tags": ["cruelty", "sacrifice", "spiritual_authority"],
+      "description": "Archbishop saves orphan with final breath before execution",
+      "observer": "orphan_witness",
+      "schwarzschild_radius": 1.58,
+      "dilation_potential": 60.0
+    },
+    {
+      "id": 203,
+      "t": 0.680,
+      "M": 0.80,
+      "psi_M": [0.6, 0.4],
+      "tags": ["justice", "vengeance", "systemic_corruption"],
+      "description": "Cartel financier's ledger burned during assassination",
+      "observer": "daughter_elena",
+      "schwarzschild_radius": 1.63,
+      "dilation_potential": 75.0,
+      "entangled_with": [47],
+      "wormhole_strength": 0.89
+    },
+    {
+      "id": 89,
+      "t": 0.029,
+      "M": 0.55,
+      "psi_M": [0.9, 0.1],
+      "tags": ["efficiency", "coldness", "military_hierarchy"],
+      "description": "General executed during strategy meeting",
+      "observer": "tactical_team"
+    },
+    {
+      "id": 112,
+      "t": 0.037,
+      "M": 0.60,
+      "psi_M": [0.4, 0.6],
+      "tags": ["grief", "determination", "economic_exploitation"],
+      "description": "Merchant lord killed by orphaned farmer's son",
+      "observer": "avenger_youth",
+      "entangled_with": [47],
+      "entanglement_strength": 0.73
+    },
+    {
+      "id": 23,
+      "t": 0.008,
+      "M": 0.25,
+      "psi_M": [0.5, 0.5],
+      "tags": ["surprise", "resignation", "bureaucratic_corruption"],
+      "description": "Mid-level official, no personal connection shown",
+      "observer": "omniscient_montage"
+    },
+    {
+      "id": 177,
+      "t": 0.059,
+      "M": 0.30,
+      "psi_M": [0.6, 0.4],
+      "tags": ["fear", "relief", "religious_oppression"],
+      "description": "Local priest killed by congregation member",
+      "observer": "congregation_collective"
+    },
+    {
+      "id": 1,
+      "t": 0.001,
+      "M": 0.42,
+      "psi_M": [0.5, 0.5],
+      "tags": ["financial_elite", "surprise"],
+      "description": "Bank chairman assassination (template archetype)",
+      "observer": "omniscient_montage"
+    },
+    {
+      "id": 2,
+      "t": 0.002,
+      "M": 0.38,
+      "psi_M": [0.5, 0.5],
+      "tags": ["hereditary_aristocrat", "arrogance"],
+      "description": "Duke's execution (template archetype)",
+      "observer": "omniscient_montage"
+    },
+    {
+      "id": 3,
+      "t": 0.003,
+      "M": 0.35,
+      "psi_M": [0.5, 0.5],
+      "tags": ["religious_hierarchy", "hypocrisy"],
+      "description": "Cardinal assassination (template archetype)",
+      "observer": "omniscient_montage"
+    }
+  ],
+  "chronoton_templates": {
+    "note": "Remaining 190 chronotons generated from these templates with variations",
+    "financial_elite": {
+      "M_range": [0.20, 0.50],
+      "psi_M_default": [0.5, 0.5],
+      "tags": ["financial_elite", "corruption"],
+      "count": 47
+    },
+    "hereditary_aristocrat": {
+      "M_range": [0.20, 0.45],
+      "psi_M_default": [0.5, 0.5],
+      "tags": ["hereditary_power", "privilege"],
+      "count": 38
+    },
+    "religious_hierarchy": {
+      "M_range": [0.25, 0.55],
+      "psi_M_default": [0.5, 0.5],
+      "tags": ["religious_authority", "dogma"],
+      "count": 31
+    },
+    "military_command": {
+      "M_range": [0.30, 0.60],
+      "psi_M_default": [0.7, 0.3],
+      "tags": ["military_power", "violence"],
+      "count": 28
+    },
+    "industrial_baron": {
+      "M_range": [0.25, 0.50],
+      "psi_M_default": [0.5, 0.5],
+      "tags": ["industrial_exploitation", "labor"],
+      "count": 24
+    },
+    "bureaucratic_official": {
+      "M_range": [0.15, 0.35],
+      "psi_M_default": [0.5, 0.5],
+      "tags": ["bureaucracy", "compliance"],
+      "count": 22
+    }
+  },
+  "fermions": [
+    {
+      "name": "Elena Vasquez",
+      "id": "daughter_elena",
+      "shell": 1,
+      "orbit": [0.5, 0.0, 0.0],
+      "state": {
+        "archetype": "innocent",
+        "motivation": "survival",
+        "valence": 0.80,
+        "agency": 0.05
+      },
+      "final_state": {
+        "archetype": "tyrant",
+        "motivation": "dominion",
+        "valence": -0.85,
+        "agency": 0.70
+      },
+      "arc_description": "Orphaned by murder #47, becomes revolutionary leader",
+      "observed_chronotons": [47, 112, 156, 203]
+    },
+    {
+      "name": "Marcus Chen",
+      "id": "councilor_marcus",
+      "shell": 1,
+      "orbit": [-0.5, 0.0, 0.0],
+      "state": {
+        "archetype": "redeemer",
+        "motivation": "justice",
+        "valence": 0.65,
+        "agency": 0.35
+      },
+      "final_state": {
+        "archetype": "tyrant",
+        "motivation": "redemption",
+        "valence": -0.78,
+        "agency": 0.50
+      },
+      "pepc_collision": {
+        "timestamp": 7980,
+        "with": "daughter_elena",
+        "distance": 0.11,
+        "resolution": "motivation_shift"
+      }
+    },
+    {
+      "name": "The Ghost",
+      "id": "assassin_ghost",
+      "shell": 2,
+      "orbit": [0.0, 0.5, 0.0],
+      "state": {
+        "archetype": "trickster",
+        "motivation": "redemption",
+        "valence": -0.40,
+        "agency": 0.20
+      },
+      "key_moment": "Executes murder #47, haunted by daughter's eyes"
+    },
+    {
+      "name": "Young Avenger",
+      "id": "orphan_avenger",
+      "shell": 2,
+      "orbit": [0.0, -0.5, 0.0],
+      "state": {
+        "archetype": "innocent",
+        "motivation": "revenge",
+        "valence": 0.30,
+        "agency": 0.15
+      },
+      "key_moment": "Completes murder #112, inherits merchant empire"
+    },
+    {
+      "name": "The Prophet",
+      "id": "prophet_witness",
+      "shell": 2,
+      "orbit": [0.3, 0.3, 0.0],
+      "state": {
+        "archetype": "mentor",
+        "motivation": "preservation",
+        "valence": 0.90,
+        "agency": 0.10
+      },
+      "key_moment": "Survives massacre, records history"
+    },
+    {
+      "name": "The Enforcer",
+      "id": "enforcer_pragmatist",
+      "shell": 2,
+      "orbit": [-0.3, -0.3, 0.0],
+      "state": {
+        "archetype": "warrior",
+        "motivation": "order",
+        "valence": 0.10,
+        "agency": 0.25
+      },
+      "key_moment": "Coordinates tactical executions"
+    }
+  ],
+  "motifs": [
+    {
+      "name": "Violence as Midwife",
+      "id": "violence_as_midwife",
+      "amplitude": [0.707, 0.707],
+      "basis": ["tragedy", "triumph"],
+      "question": "Does violence birth liberation or tyranny?",
+      "final_amplitude": [0.822, 0.569],
+      "collapse_probability": {
+        "tragedy": 0.676,
+        "triumph": 0.324
+      }
+    },
+    {
+      "name": "Sins of the Father",
+      "id": "sins_of_father",
+      "amplitude": [0.707, 0.707],
+      "basis": ["guilt", "innocence"],
+      "question": "Are children responsible for ancestral crimes?",
+      "final_amplitude": [0.735, 0.678],
+      "collapse_probability": {
+        "guilt": 0.540,
+        "innocence": 0.460
+      }
+    },
+    {
+      "name": "Cost of Utopia",
+      "id": "cost_of_utopia",
+      "amplitude": [0.707, 0.707],
+      "basis": ["necessary", "unforgivable"],
+      "question": "Does the end justify the means?",
+      "final_amplitude": [0.690, 0.724],
+      "collapse_probability": {
+        "necessary": 0.476,
+        "unforgivable": 0.524
+      }
+    }
+  ],
+  "expected_results": {
+    "coherence": 0.9714,
+    "conservation": 0.9965,
+    "entanglement": 0.9535,
+    "causality": 1.0000,
+    "total_entanglements": 1247,
+    "strong_entanglements": 1247,
+    "pepc_violations": 4,
+    "event_horizons": 3,
+    "wormholes": 3,
+    "viewer_split": {
+      "path_a_tragedy": 0.42,
+      "path_b_triumph": 0.31,
+      "path_c_superposition": 0.27
+    }
+  },
+  "metadata": {
+    "author": "John Jacob Weber II",
+    "collaborators": ["Claude", "Vox", "Grok", "Gemini"],
+    "date": "2025-11-24",
+    "white_paper_reference": "Section 5: Simulation - The Grindhouse Genesis",
+    "validation_status": "Theoretically proven, awaiting full implementation"
+  }
+}
