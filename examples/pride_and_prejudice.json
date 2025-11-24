@@ -1,0 +1,47 @@
+{
+  "title": "Pride and Prejudice",
+  "chronotons": [
+    {
+      "id": 0,
+      "t": 0.05,
+      "M": 4.2,
+      "ΨM": [0.8, 0.2],
+      "tags": ["first_impression", "pride"]
+    },
+    {
+      "id": 1,
+      "t": 0.35,
+      "M": 7.8,
+      "ΨM": [0.3, 0.7],
+      "tags": ["misunderstanding", "prejudice"]
+    },
+    {
+      "id": 2,
+      "t": 0.85,
+      "M": 6.5,
+      "ΨM": [0.6, 0.4],
+      "tags": ["revelation", "love"]
+    }
+  ],
+  "fermions": [
+    {
+      "name": "Elizabeth",
+      "shell": 1,
+      "orbit": [0.5, 0.0, 0.0],
+      "state": {"archetype": "witty", "agency": 0.6}
+    },
+    {
+      "name": "Darcy",
+      "shell": 1,
+      "orbit": [-0.5, 0.0, 0.0],
+      "state": {"archetype": "proud", "agency": 0.4}
+    }
+  ],
+  "motifs": [
+    {
+      "name": "Love ΨM",
+      "amplitude": [0.7, 0.7],
+      "basis": ["enduring", "fleeting"]
+    }
+  ]
+}

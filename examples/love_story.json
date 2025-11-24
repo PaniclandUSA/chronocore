@@ -1,0 +1,15 @@
+{
+  "title": "The Weight of First Sight",
+  "chronotons": [
+    {"id": 0, "t": 0.1, "M": 5.0, "psi_M": [0.8, 0.2], "tags": ["first_meeting", "hope"]},
+    {"id": 1, "t": 0.4, "M": 8.5, "psi_M": [0.3, 0.7], "tags": ["betrayal", "grief"]},
+    {"id": 2, "t": 0.7, "M": 6.0, "psi_M": [0.6, 0.4], "tags": ["reunion", "forgiveness"]}
+  ],
+  "fermions": [
+    {"name": "Lover A", "shell": 1, "orbit": [0.5, 0.0, 0.0], "state": {"archetype": "dreamer", "agency": 0.6}},
+    {"name": "Lover B", "shell": 1, "orbit": [-0.5, 0.0, 0.0], "state": {"archetype": "realist", "agency": 0.4}}
+  ],
+  "motifs": [
+    {"name": "Love ΨM", "amplitude": [0.7, 0.7], "basis": ["enduring", "fleeting"]}
+  ]
+}
