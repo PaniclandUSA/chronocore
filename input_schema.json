@@ -1,0 +1,90 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://chronocore.org/schema/v0.1",
+  "title": "ChronoCore™ Story Input Schema v0.1",
+  "description": "Universal JSON format for any narrative under Grindhouse Relativism",
+  "type": "object",
+  "required": ["title", "chronotons", "fermions", "motifs"],
+  "properties": {
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "chronotons": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "t", "M", "psi_M", "tags"],
+        "properties": {
+          "id": {"type": "integer", "minimum": 0},
+          "t": {"type": "number", "minimum": 0, "maximum": 1},
+          "M": {"type": "number", "minimum": 0, "maximum": 10},
+          "psi_M": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {"type": "number", "minimum": 0, "maximum": 1}
+          },
+          "tags": {
+            "type": "array",
+            "minItems": 1,
+            "items": {"type": "string"}
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "fermions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "shell", "orbit", "state"],
+        "properties": {
+          "name": {"type": "string"},
+          "shell": {"type": "integer", "minimum": 1},
+          "orbit": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {"type": "number"}
+          },
+          "state": {
+            "type": "object",
+            "properties": {
+              "archetype": {"type": "string"},
+              "motivation": {"type": "string"},
+              "valence": {"type": "number", "minimum": -1, "maximum": 1},
+              "agency": {"type": "number", "minimum": 0, "maximum": 1}
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "motifs": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["name", "amplitude", "basis"],
+        "properties": {
+          "name": {"type": "string"},
+          "amplitude": {
+            "type": "array",
+            "minItems": 2,
+            "items": {"type": "number", "minimum": 0, "maximum": 1}
+          },
+          "basis": {
+            "type": "array",
+            "minItems": 2,
+            "items": {"type": "string"}
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
