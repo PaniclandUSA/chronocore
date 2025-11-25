@@ -62,7 +62,7 @@ ChronoCore v0.2 was reviewed by Grok, who contributed fixes for boundary-safe en
 
 ### Installation
 pip install -r requirements.txt
-git clone [https://github.com/](https://github.com/)<your-org>/chronocore.git
+git clone https://github.com/<your-org>/chronocore.git
 cd chronocore
 pip install -r requirements.txt
 
@@ -91,11 +91,13 @@ print(f"Narrative Coherence: {score}")
 core.visualize()
 
 📦 Who This Is For
+
  * Developers: Integrate physics-based logic into interactive stories or games.
  * Researchers: Explore narrative as a measurable physical system (entanglement entropy, curvature dynamics).
  * Writers: Analyze story structure with objective tools.
  * AI Model Researchers: Test narrative reasoning and causal consistency in LLMs using physical constraints.
 💬 Join the Revolution
+
 ChronoCore is open, evolving, and ready for collaboration.
  * ⭐ Star this repo if you believe stories deserve physics.
  * 🧬 Fork it to help build narrative spacetime.
