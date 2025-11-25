@@ -137,7 +137,3 @@ ChronoCore is open, evolving, and ready for collaboration.
 - ⭐ **Star this repo** if you believe stories deserve physics  
 - 🧬 **Fork it** to help build narrative spacetime  
 - 🚀 **Join the v0.3 quantum upgrade** to stand at the edge of what stories can become
-
-======================
-END MARKDOWN
-======================
