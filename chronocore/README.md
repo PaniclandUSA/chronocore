@@ -62,7 +62,7 @@ ChronoCore v0.2 was reviewed by Grok, who contributed fixes for boundary-safe en
 
 ### Installation
 pip install -r requirements.txt
-git clone https://github.com/<your-org>/chronocore.git
+git clone https://github.com/PaniclandUSA/chronocore.git
 cd chronocore
 pip install -r requirements.txt
 
